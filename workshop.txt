@@ -1,0 +1,26 @@
+[quote] 
+- This is a standalone version of the estate system from my vanilla Shattered mod for the Anbennar setting.
+
+- Reworked UI
+- New interactions
+- Ability to Sell/Seize land from specific estates
+- Crownland reworked and now is a choice of where you want to be on the 0%-100% scale.
+
+- Anyone is free to use this mod as they see fit, just add the credits.
+- Suggestions for Crownland to make it more appropriate for Anbennar are always welcome
+[/quote]
+[quote]
+[h1] Shattered Mod [/h1]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2152606065] Doge Shattered Europa [/url]
+
+[h1] Need Ideas and Policies mod? [/h1]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2738561219] Doge - Anbennar Ideas and Policies [/url]
+
+
+[h1] Crownland Modifiers [/h1]
+You can check the crownland modifiers and tier [url=https://dogeshattered.fandom.com/wiki/Estates] here [/url] on the wiki.
+[/quote]
+
+[h1] BitBucket [/h1]
+
+BitBucket version does work, however, you will see graphical estate icon issues due to there being more on that branch. I will prioritize steam version of mod but will try to have bitbucket compatible as best as I can.

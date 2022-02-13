@@ -721,7 +721,7 @@ interaction = {
         }
     }
 	ai_will_do = {
-		factor = 25
+		factor = 1
 		
 	}
 }
@@ -748,7 +748,7 @@ interaction = {
         }
     }
 	ai_will_do = {
-		factor = 25
+		factor = 1
 		
 	}
 }
