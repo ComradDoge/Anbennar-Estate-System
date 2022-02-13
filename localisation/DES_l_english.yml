@@ -1,0 +1,102 @@
+﻿l_english:
+ # Other
+ estate_system_exit_tooltip: "§RWARNING§!: You will still have to wait five years if you do not pick anything."
+ iv_estate_events.generic.sale.d:0 "How many titles should we sell?"
+ iv_estate_events.generic.seize.d:0 "Seizing land will greatly anger the estate and might even result in an uprising."
+ iv_estate_events.event.exit:0 "§YMaybe another time...§!"
+ iv_estate_events.event.return:0 "§YReturn to Selection§!"
+
+ # Sale Event Estate Pick Screen
+ iv_estate_events.1.t:0 "Sale of Titles"
+ iv_estate_events.1.d:0 "Which estate should we sell to? A strong estate can help us but it can also undermine our rule.\n\n§RNOTE§!: Estates such as §BAdventures§! or §BMages§! do not have options due to their special nature. If you do not see an option here it is most likely intentional."
+ 
+ iv_estate_events.sale.o1:0 "Sell Land to the Clergy"
+ iv_estate_events.sale.o2:0 "Sell Land to the Nobles"
+ iv_estate_events.sale.o3:0 "Sell Land to the Burghers"
+ iv_estate_events.sale.o4:0 "Sell Land to the Brahmins"
+ iv_estate_events.sale.o5:0 "Sell Land to the Maratha"
+ iv_estate_events.sale.o6:0 "Sell Land to the Vaisyas"
+ iv_estate_events.sale.o7:0 "Sell Land to the Cossacks"
+ iv_estate_events.sale.o8:0 "Sell Land to the Tribes"
+ iv_estate_events.sale.o9:0 "Sell Land to the Tribes" 
+ iv_estate_events.sale.o10:0 "Sell Land to the Ministries"
+ iv_estate_events.sale.o11:0 "Sell Land to the Upper Caste"
+ iv_estate_events.sale.o12:0 "Sell Land to the Middle Caste"
+ iv_estate_events.sale.o13:0 "Sell Land to the Lower Caste"
+
+
+ # Estate Specific Sale Screen
+ iv_estate_events.2.t:0 "Sale of Titles to the Clergy"
+ iv_estate_events.3.t:0 "Sale of Titles to the Nobles"
+ iv_estate_events.4.t:0 "Sale of Titles to the Burghers"
+ iv_estate_events.5.t:0 "Sale of Titles to the Brahmins"
+ iv_estate_events.6.t:0 "Sale of Titles to the Maratha"
+ iv_estate_events.7.t:0 "Sale of Titles to the Vaisyas"
+ iv_estate_events.8.t:0 "Sale of Titles to the Cossacks"
+ iv_estate_events.9.t:0 "Sale of Titles to the Tribes"
+ iv_estate_events.10.t:0 "Sale of Titles to the Tribes"
+ iv_estate_events.11.t:0 "Sale of Titles to the Ministries"
+ iv_estate_events.12.t:0 "Sale of Titles to the Upper Caste"
+ iv_estate_events.13.t:0 "Sale of Titles to the Middle Caste"
+ iv_estate_events.14.t:0 "Sale of Titles to the Lower Caste"
+
+ # Sell Land Number Screen
+ iv_estate_events.num.o1:0 "§l5%§!" 
+ iv_estate_events.num.o2:0 "§l10%§!" 
+ iv_estate_events.num.o3:0 "§l15%§!"
+ iv_estate_events.num.o4:0 "§l20%§!"
+ # Seize Land Number Screen
+ iv_estate_events.num.o5:0 "§l5%§!"
+ iv_estate_events.num.o6:0 "§l10%§!"
+ iv_estate_events.num.o7:0 "§l15%§!"
+ iv_estate_events.num.o8:0 "§l20%§!"
+
+
+ # Seize Event Estate Pick Screen
+ iv_estate_events.15.t:0 "Seizing Land"
+ iv_estate_events.15.d:0 "By seizing land from an estate we will bolster our crown land but anger the respective estate greatly.\n\n§RNOTE§!: Estates such as §BAdventures§! or §BMages§! do not have options due to their special nature. If you do not see an option here it is most likely intentional."
+
+ iv_estate_events.seize.o1:0 "Seize land from the Clergy"
+ iv_estate_events.seize.o2:0 "Seize land from the Nobles"
+ iv_estate_events.seize.o3:0 "Seize land from the Burghers"
+ iv_estate_events.seize.o4:0 "Seize land from the Brahmins"
+ iv_estate_events.seize.o5:0 "Seize land from the Maratha"
+ iv_estate_events.seize.o6:0 "Seize land from the Vaisyas"
+ iv_estate_events.seize.o7:0 "Seize land from the Cossacks"
+ iv_estate_events.seize.o8:0 "Seize land from the Tribes"
+ iv_estate_events.seize.o9:0 "Seize land from the Tribes"
+ iv_estate_events.seize.o10:0 "Seize land from the Ministries"
+ iv_estate_events.seize.o11:0 "Seize land from the Upper Caste"
+ iv_estate_events.seize.o12:0 "Seize land from the Middle Caste"
+ iv_estate_events.seize.o13:0 "Seize land from the Lower Caste"
+
+ # Estate Specific Seize Screen
+ iv_estate_events.16.t:0 "Seize land from the Clergy"
+ iv_estate_events.17.t:0 "Seize land from the Nobles"
+ iv_estate_events.18.t:0 "Seize land from the Burghers"
+ iv_estate_events.19.t:0 "Seize land from the Brahmins"
+ iv_estate_events.20.t:0 "Seize land from the Maratha"
+ iv_estate_events.21.t:0 "Seize land from the Vaisyas"
+ iv_estate_events.22.t:0 "Seize land from the Cossacks"
+ iv_estate_events.23.t:0 "Seize land from the Tribes"
+ iv_estate_events.24.t:0 "Seize land from the Tribes"
+ iv_estate_events.25.t:0 "Seize land from the Ministries"
+ iv_estate_events.26.t:0 "Seize land from the Upper Caste"
+ iv_estate_events.27.t:0 "Seize land from the Middle Caste"
+ iv_estate_events.28.t:0 "Seize land from the Lower Caste" 
+
+ # Estate Interactions and Modifiers
+ estate_interaction_idea_variation_2:0 "Display Legitimacy"
+ estate_interaction_idea_variation_3:0 "Display Prestige"
+ estate_interaction_idea_variation_4:0 "Postpone Reform"
+ estate_interaction_idea_variation_5:0 "Corrupt Estates"
+ estate_interaction_idea_variation_6:0 "Grant Self Governance"
+ estate_interaction_idea_variation_7:0 "Tax Giveaway"
+ estate_interaction_idea_variation_8:0 "Limit Influence"
+ estate_interaction_idea_variation_9:0 "Execute Estate Leaders"
+ estate_interaction_idea_variation_10:0 "Guarantee Legacy Laws"
+
+ idea_variation_postpone_reform:0 "Reforms Postponed"
+ idea_variation_grant_self_governance:0 "Permitted Self Governance of Estates"
+ idea_variation_legacy_laws:0 "Legacy Laws Guaranteed" 
+ 

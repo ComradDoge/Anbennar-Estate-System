@@ -1,0 +1,41 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_estate_interaction_idea_variation_2"
+		texturefile = "gfx/interface/estates/idea_variation_estate_button_2.dds"
+	}
+	spriteType = {
+		name = "GFX_estate_interaction_idea_variation_3"
+		texturefile = "gfx/interface/estates/idea_variation_estate_button_3.dds"
+	}
+	spriteType = {
+		name = "GFX_estate_interaction_idea_variation_4"
+		texturefile = "gfx/interface/estates/idea_variation_estate_button_4.dds"
+	}
+	spriteType = {
+		name = "GFX_estate_interaction_idea_variation_5"
+		texturefile = "gfx/interface/estates/idea_variation_estate_button_5.dds"
+	}
+	spriteType = {
+		name = "GFX_estate_interaction_idea_variation_6"
+		texturefile = "gfx/interface/estates/idea_variation_estate_button_6.dds"
+	}
+	spriteType = {
+		name = "GFX_estate_interaction_idea_variation_7"
+		texturefile = "gfx/interface/estates/idea_variation_estate_button_7.dds"
+	}
+	spriteType = {
+		name = "GFX_estate_interaction_idea_variation_8"
+		texturefile = "gfx/interface/estates/idea_variation_estate_button_8.dds"
+	}
+	spriteType = {
+		name = "GFX_estate_interaction_idea_variation_9"
+		texturefile = "gfx/interface/estates/idea_variation_estate_button_9.dds"
+	}
+	spriteType = {
+		name = "GFX_estate_interaction_idea_variation_10"
+		texturefile = "gfx/interface/estates/idea_variation_estate_button_10.dds"
+	}
+	
+
+}
