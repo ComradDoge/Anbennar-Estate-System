@@ -1,8 +1,5 @@
-####################################################################################
-####################################################################################
-#### Idea Variation Estate Events by flogi
-####################################################################################
-####################################################################################
+# Sales 1-14 / 51-99
+# Seize 15-28 / 29-50
 
 
 namespace = iv_estate_events
@@ -49,7 +46,7 @@ country_event = {
 	option = {
 		name = "iv_estate_events.sale.o4"
 		trigger = {
-			has_estate = estate_brahmins
+			has_estate = estate_mages
 		}
 		country_event = { id = iv_estate_events.5 } 
 		}
@@ -57,7 +54,7 @@ country_event = {
 	option = {
 		name = "iv_estate_events.sale.o5"
 		trigger = {
-			has_estate = estate_maratha
+			has_estate = estate_adventurers
 		}
 		country_event = { id = iv_estate_events.6 } 
 		}
@@ -65,7 +62,7 @@ country_event = {
 	option = {
 		name = "iv_estate_events.sale.o6"
 		trigger = {
-			has_estate = estate_vaisyas
+			has_estate = estate_artificers
 		}
 		country_event = { id = iv_estate_events.7 } 
 		}
@@ -125,6 +122,69 @@ country_event = {
 			has_estate = estate_lowercastes
 		}
 		country_event = { id = iv_estate_events.14 } 
+	}
+	option = {
+		name = "iv_estate_events.sale.o14"
+		trigger = {
+			has_estate = estate_acolytes
+		}
+		country_event = { id = iv_estate_events.51 } 
+	}
+	option = {
+		name = "iv_estate_events.sale.o15"
+		trigger = {
+			has_estate = estate_eunuchs
+		}
+		country_event = { id = iv_estate_events.52 } 
+	}
+	option = {
+		name = "iv_estate_events.sale.o16"
+		trigger = {
+			has_estate = estate_vampires
+		}
+		country_event = { id = iv_estate_events.53 } 
+	}
+	option = {
+		name = "iv_estate_events.sale.o17"
+		trigger = {
+			has_estate = estate_daulophs
+		}
+		country_event = { id = iv_estate_events.54 } 
+	}
+	option = {
+		name = "iv_estate_events.sale.o18"
+		trigger = {
+			has_estate = estate_khelorvalshi
+		}
+		country_event = { id = iv_estate_events.55 } 
+	}
+	option = {
+		name = "iv_estate_events.sale.o19"
+		trigger = {
+			has_estate = estate_kabiurgarko
+		}
+		country_event = { id = iv_estate_events.56 } 
+	}
+	option = {
+		name = "iv_estate_events.sale.o20"
+		trigger = {
+			has_estate = estate_ajgriijarul
+		}
+		country_event = { id = iv_estate_events.57 } 
+	}
+	option = {
+		name = "iv_estate_events.sale.o21"
+		trigger = {
+			has_estate = estate_chumijemoya
+		}
+		country_event = { id = iv_estate_events.58 } 
+	}
+	option = {
+		name = "iv_estate_events.sale.o22"
+		trigger = {
+			has_estate = estate_shinukhorchi
+		}
+		country_event = { id = iv_estate_events.59 } 
 	}
 
 	option = {
@@ -315,7 +375,7 @@ country_event = {
 }		
 
 ##########################################
-#### Land Distribution # Brahmins
+#### Land Distribution # Mages
 ##########################################
 
 country_event = {
@@ -332,7 +392,7 @@ country_event = {
 	option = {
 		name = "iv_estate_events.num.o1"
 		change_estate_land_share = {
-				estate = estate_brahmins
+				estate = estate_mages
 				share = 5
 			}
 		iv_title_sale_1 = yes	
@@ -342,7 +402,7 @@ country_event = {
 		name = "iv_estate_events.num.o2"
 		trigger = { crown_land_share = 10 }
 		change_estate_land_share = {
-				estate = estate_brahmins
+				estate = estate_mages
 				share = 10
 			}
 		iv_title_sale_2 = yes		
@@ -352,7 +412,7 @@ country_event = {
 		name = "iv_estate_events.num.o3"
 		trigger = { crown_land_share = 15 }
 		change_estate_land_share = {
-				estate = estate_brahmins
+				estate = estate_mages
 				share = 15
 			}
 		iv_title_sale_3 = yes		
@@ -362,7 +422,7 @@ country_event = {
 		name = "iv_estate_events.num.o4"
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
-				estate = estate_brahmins
+				estate = estate_mages
 				share = 20
 			}
 		iv_title_sale_4 = yes	
@@ -379,7 +439,7 @@ country_event = {
 
 
 ##########################################
-#### Land Distribution # Maratha
+#### Land Distribution # Adventurers
 ##########################################
 
 country_event = {
@@ -396,7 +456,7 @@ country_event = {
 	option = {
 		name = "iv_estate_events.num.o1"
 		change_estate_land_share = {
-				estate = estate_maratha
+				estate = estate_adventurers
 				share = 5
 			}
 		iv_title_sale_1 = yes	
@@ -406,7 +466,7 @@ country_event = {
 		name = "iv_estate_events.num.o2"
 		trigger = { crown_land_share = 10 }
 		change_estate_land_share = {
-				estate = estate_maratha
+				estate = estate_adventurers
 				share = 10
 			}
 		iv_title_sale_2 = yes		
@@ -416,7 +476,7 @@ country_event = {
 		name = "iv_estate_events.num.o3"
 		trigger = { crown_land_share = 15 }
 		change_estate_land_share = {
-				estate = estate_maratha
+				estate = estate_adventurers
 				share = 15
 			}
 		iv_title_sale_3 = yes		
@@ -426,7 +486,7 @@ country_event = {
 		name = "iv_estate_events.num.o4"
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
-				estate = estate_maratha
+				estate = estate_adventurers
 				share = 20
 			}
 		iv_title_sale_4 = yes	
@@ -440,7 +500,7 @@ country_event = {
 
 
 ##########################################
-#### Land Distribution # Vaisyas
+#### Land Distribution # Artificers
 ##########################################
 
 country_event = {
@@ -457,7 +517,7 @@ country_event = {
 	option = {
 		name = "iv_estate_events.num.o1"
 		change_estate_land_share = {
-				estate = estate_vaisyas
+				estate = estate_artificers
 				share = 5
 			}
 		iv_title_sale_1 = yes	
@@ -467,7 +527,7 @@ country_event = {
 		name = "iv_estate_events.num.o2"
 		trigger = { crown_land_share = 10 }
 		change_estate_land_share = {
-				estate = estate_vaisyas
+				estate = estate_artificers
 				share = 10
 			}
 		iv_title_sale_2 = yes		
@@ -477,7 +537,7 @@ country_event = {
 		name = "iv_estate_events.num.o3"
 		trigger = { crown_land_share = 15 }
 		change_estate_land_share = {
-				estate = estate_vaisyas
+				estate = estate_artificers
 				share = 15
 			}
 		iv_title_sale_3 = yes		
@@ -487,7 +547,7 @@ country_event = {
 		name = "iv_estate_events.num.o4"
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
-				estate = estate_vaisyas
+				estate = estate_artificers
 				share = 20
 			}
 		iv_title_sale_4 = yes	
@@ -804,7 +864,7 @@ country_event = {
 
 
 ##########################################
-#### Land Distribution # Nationalists
+#### Land Distribution # Middle Caste
 ##########################################
 
 country_event = {
@@ -922,6 +982,567 @@ country_event = {
 	}
 }	
 
+##########################################
+#### Land Distribution # Acolytes
+##########################################
+country_event = {
+
+	id = iv_estate_events.51
+	title = iv_estate_events.51.t
+	desc = iv_estate_events.generic.sale.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o1"
+		change_estate_land_share = {
+				estate = estate_acolytes
+				share = 5
+			}
+		iv_title_sale_1 = yes	
+		}	
+	
+	option = {
+		name = "iv_estate_events.num.o2"
+		trigger = { crown_land_share = 10 }
+		change_estate_land_share = {
+				estate = estate_acolytes
+				share = 10
+			}
+		iv_title_sale_2 = yes		
+		}		
+	
+	option = {
+		name = "iv_estate_events.num.o3"
+		trigger = { crown_land_share = 15 }
+		change_estate_land_share = {
+				estate = estate_acolytes
+				share = 15
+			}
+		iv_title_sale_3 = yes		
+		}		
+		
+	option = {
+		name = "iv_estate_events.num.o4"
+		trigger = { crown_land_share = 20 }
+		change_estate_land_share = {
+				estate = estate_acolytes
+				share = 20
+			}
+		iv_title_sale_4 = yes	
+		}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.1 }
+	}
+}
+
+##########################################
+#### Land Distribution # Eunuchs
+##########################################
+country_event = {
+
+	id = iv_estate_events.52
+	title = iv_estate_events.52.t
+	desc = iv_estate_events.generic.sale.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o1"
+		change_estate_land_share = {
+				estate = estate_eunuchs
+				share = 5
+			}
+		iv_title_sale_1 = yes	
+		}	
+	
+	option = {
+		name = "iv_estate_events.num.o2"
+		trigger = { crown_land_share = 10 }
+		change_estate_land_share = {
+				estate = estate_eunuchs
+				share = 10
+			}
+		iv_title_sale_2 = yes		
+		}		
+	
+	option = {
+		name = "iv_estate_events.num.o3"
+		trigger = { crown_land_share = 15 }
+		change_estate_land_share = {
+				estate = estate_eunuchs
+				share = 15
+			}
+		iv_title_sale_3 = yes		
+		}		
+		
+	option = {
+		name = "iv_estate_events.num.o4"
+		trigger = { crown_land_share = 20 }
+		change_estate_land_share = {
+				estate = estate_eunuchs
+				share = 20
+			}
+		iv_title_sale_4 = yes	
+		}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.1 }
+	}
+}
+
+##########################################
+#### Land Distribution # Vampires
+##########################################
+country_event = {
+
+	id = iv_estate_events.53
+	title = iv_estate_events.53.t
+	desc = iv_estate_events.generic.sale.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o1"
+		change_estate_land_share = {
+				estate = estate_vampires
+				share = 5
+			}
+		iv_title_sale_1 = yes	
+		}	
+	
+	option = {
+		name = "iv_estate_events.num.o2"
+		trigger = { crown_land_share = 10 }
+		change_estate_land_share = {
+				estate = estate_vampires
+				share = 10
+			}
+		iv_title_sale_2 = yes		
+		}		
+	
+	option = {
+		name = "iv_estate_events.num.o3"
+		trigger = { crown_land_share = 15 }
+		change_estate_land_share = {
+				estate = estate_vampires
+				share = 15
+			}
+		iv_title_sale_3 = yes		
+		}		
+		
+	option = {
+		name = "iv_estate_events.num.o4"
+		trigger = { crown_land_share = 20 }
+		change_estate_land_share = {
+				estate = estate_vampires
+				share = 20
+			}
+		iv_title_sale_4 = yes	
+		}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.1 }
+	}
+}
+
+##########################################
+#### Land Distribution # Daulophs
+##########################################
+country_event = {
+
+	id = iv_estate_events.54
+	title = iv_estate_events.54.t
+	desc = iv_estate_events.generic.sale.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o1"
+		change_estate_land_share = {
+				estate = estate_daulophs
+				share = 5
+			}
+		iv_title_sale_1 = yes	
+		}	
+	
+	option = {
+		name = "iv_estate_events.num.o2"
+		trigger = { crown_land_share = 10 }
+		change_estate_land_share = {
+				estate = estate_daulophs
+				share = 10
+			}
+		iv_title_sale_2 = yes		
+		}		
+	
+	option = {
+		name = "iv_estate_events.num.o3"
+		trigger = { crown_land_share = 15 }
+		change_estate_land_share = {
+				estate = estate_daulophs
+				share = 15
+			}
+		iv_title_sale_3 = yes		
+		}		
+		
+	option = {
+		name = "iv_estate_events.num.o4"
+		trigger = { crown_land_share = 20 }
+		change_estate_land_share = {
+				estate = estate_daulophs
+				share = 20
+			}
+		iv_title_sale_4 = yes	
+		}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.1 }
+	}
+}
+
+##########################################
+#### Land Distribution # Khelorvalshi
+##########################################
+country_event = {
+
+	id = iv_estate_events.55
+	title = iv_estate_events.55.t
+	desc = iv_estate_events.generic.sale.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o1"
+		change_estate_land_share = {
+				estate = estate_khelorvalshi
+				share = 5
+			}
+		iv_title_sale_1 = yes	
+		}	
+	
+	option = {
+		name = "iv_estate_events.num.o2"
+		trigger = { crown_land_share = 10 }
+		change_estate_land_share = {
+				estate = estate_khelorvalshi
+				share = 10
+			}
+		iv_title_sale_2 = yes		
+		}		
+	
+	option = {
+		name = "iv_estate_events.num.o3"
+		trigger = { crown_land_share = 15 }
+		change_estate_land_share = {
+				estate = estate_khelorvalshi
+				share = 15
+			}
+		iv_title_sale_3 = yes		
+		}		
+		
+	option = {
+		name = "iv_estate_events.num.o4"
+		trigger = { crown_land_share = 20 }
+		change_estate_land_share = {
+				estate = estate_khelorvalshi
+				share = 20
+			}
+		iv_title_sale_4 = yes	
+		}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.1 }
+	}
+}
+
+
+##########################################
+#### Land Distribution # Kabiurgarko
+##########################################
+country_event = {
+
+	id = iv_estate_events.56
+	title = iv_estate_events.56.t
+	desc = iv_estate_events.generic.sale.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o1"
+		change_estate_land_share = {
+				estate = estate_kabiurgarko
+				share = 5
+			}
+		iv_title_sale_1 = yes	
+		}	
+	
+	option = {
+		name = "iv_estate_events.num.o2"
+		trigger = { crown_land_share = 10 }
+		change_estate_land_share = {
+				estate = estate_kabiurgarko
+				share = 10
+			}
+		iv_title_sale_2 = yes		
+		}		
+	
+	option = {
+		name = "iv_estate_events.num.o3"
+		trigger = { crown_land_share = 15 }
+		change_estate_land_share = {
+				estate = estate_kabiurgarko
+				share = 15
+			}
+		iv_title_sale_3 = yes		
+		}		
+		
+	option = {
+		name = "iv_estate_events.num.o4"
+		trigger = { crown_land_share = 20 }
+		change_estate_land_share = {
+				estate = estate_kabiurgarko
+				share = 20
+			}
+		iv_title_sale_4 = yes	
+		}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.1 }
+	}
+}
+
+##########################################
+#### Land Distribution # Ajgriijarul
+##########################################
+country_event = {
+
+	id = iv_estate_events.57
+	title = iv_estate_events.57.t
+	desc = iv_estate_events.generic.sale.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o1"
+		change_estate_land_share = {
+				estate = estate_ajgriijarul
+				share = 5
+			}
+		iv_title_sale_1 = yes	
+		}	
+	
+	option = {
+		name = "iv_estate_events.num.o2"
+		trigger = { crown_land_share = 10 }
+		change_estate_land_share = {
+				estate = estate_ajgriijarul
+				share = 10
+			}
+		iv_title_sale_2 = yes		
+		}		
+	
+	option = {
+		name = "iv_estate_events.num.o3"
+		trigger = { crown_land_share = 15 }
+		change_estate_land_share = {
+				estate = estate_ajgriijarul
+				share = 15
+			}
+		iv_title_sale_3 = yes		
+		}		
+		
+	option = {
+		name = "iv_estate_events.num.o4"
+		trigger = { crown_land_share = 20 }
+		change_estate_land_share = {
+				estate = estate_ajgriijarul
+				share = 20
+			}
+		iv_title_sale_4 = yes	
+		}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.1 }
+	}
+}
+
+##########################################
+#### Land Distribution # Chumijemoya
+##########################################
+country_event = {
+
+	id = iv_estate_events.58
+	title = iv_estate_events.58.t
+	desc = iv_estate_events.generic.sale.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o1"
+		change_estate_land_share = {
+				estate = estate_chumijemoya
+				share = 5
+			}
+		iv_title_sale_1 = yes	
+		}	
+	
+	option = {
+		name = "iv_estate_events.num.o2"
+		trigger = { crown_land_share = 10 }
+		change_estate_land_share = {
+				estate = estate_chumijemoya
+				share = 10
+			}
+		iv_title_sale_2 = yes		
+		}		
+	
+	option = {
+		name = "iv_estate_events.num.o3"
+		trigger = { crown_land_share = 15 }
+		change_estate_land_share = {
+				estate = estate_chumijemoya
+				share = 15
+			}
+		iv_title_sale_3 = yes		
+		}		
+		
+	option = {
+		name = "iv_estate_events.num.o4"
+		trigger = { crown_land_share = 20 }
+		change_estate_land_share = {
+				estate = estate_chumijemoya
+				share = 20
+			}
+		iv_title_sale_4 = yes	
+		}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.1 }
+	}
+}
+
+##########################################
+#### Land Distribution # Shinukhorchi
+##########################################
+country_event = {
+
+	id = iv_estate_events.59
+	title = iv_estate_events.59.t
+	desc = iv_estate_events.generic.sale.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o1"
+		change_estate_land_share = {
+				estate = estate_shinukhorchi
+				share = 5
+			}
+		iv_title_sale_1 = yes	
+		}	
+	
+	option = {
+		name = "iv_estate_events.num.o2"
+		trigger = { crown_land_share = 10 }
+		change_estate_land_share = {
+				estate = estate_shinukhorchi
+				share = 10
+			}
+		iv_title_sale_2 = yes		
+		}		
+	
+	option = {
+		name = "iv_estate_events.num.o3"
+		trigger = { crown_land_share = 15 }
+		change_estate_land_share = {
+				estate = estate_shinukhorchi
+				share = 15
+			}
+		iv_title_sale_3 = yes		
+		}		
+		
+	option = {
+		name = "iv_estate_events.num.o4"
+		trigger = { crown_land_share = 20 }
+		change_estate_land_share = {
+				estate = estate_shinukhorchi
+				share = 20
+			}
+		iv_title_sale_4 = yes	
+		}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.1 }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ##########################################
 #### Seizing Land # Starting Event
@@ -970,7 +1591,7 @@ country_event = {
 	option = {
 		name = "iv_estate_events.seize.o4"
 		trigger = {
-			has_estate = estate_brahmins
+			has_estate = estate_mages
 		}
 		country_event = { id = iv_estate_events.19 } 
 		}
@@ -978,7 +1599,7 @@ country_event = {
 	option = {
 		name = "iv_estate_events.seize.o5"
 		trigger = {
-			has_estate = estate_maratha
+			has_estate = estate_adventurers
 		}
 		country_event = { id = iv_estate_events.20 } 
 		}
@@ -986,7 +1607,7 @@ country_event = {
 	option = {
 		name = "iv_estate_events.seize.o6"
 		trigger = {
-			has_estate = estate_vaisyas
+			has_estate = estate_artificers
 		}
 		country_event = { id = iv_estate_events.21 } 
 		}
@@ -1049,7 +1670,79 @@ country_event = {
 			has_estate = estate_lowercastes
 		}
 		country_event = { id = iv_estate_events.28 } 
-	}	
+	}
+
+	option = {
+		name = "iv_estate_events.seize.o14"
+		trigger = {
+			has_estate = estate_acolytes
+		}
+		country_event = { id = iv_estate_events.29 } 
+	}
+
+	option = {
+		name = "iv_estate_events.seize.o15"
+		trigger = {
+			has_estate = estate_eunuchs
+		}
+		country_event = { id = iv_estate_events.30 } 
+	}
+
+	option = {
+		name = "iv_estate_events.seize.o16"
+		trigger = {
+			has_estate = estate_vampires
+		}
+		country_event = { id = iv_estate_events.31 } 
+	}
+
+	option = {
+		name = "iv_estate_events.seize.o17"
+		trigger = {
+			has_estate = estate_daulophs
+		}
+		country_event = { id = iv_estate_events.32 } 
+	}
+
+	option = {
+		name = "iv_estate_events.seize.o18"
+		trigger = {
+			has_estate = estate_khelorvalshi
+		}
+		country_event = { id = iv_estate_events.33 } 
+	}
+
+	option = {
+		name = "iv_estate_events.seize.o19"
+		trigger = {
+			has_estate = estate_kabiurgarko
+		}
+		country_event = { id = iv_estate_events.34 } 
+	}
+
+	option = {
+		name = "iv_estate_events.seize.o20"
+		trigger = {
+			has_estate = estate_ajgriijarul
+		}
+		country_event = { id = iv_estate_events.35 } 
+	}
+
+	option = {
+		name = "iv_estate_events.seize.o21"
+		trigger = {
+			has_estate = estate_chumijemoya
+		}
+		country_event = { id = iv_estate_events.36 } 
+	}
+
+	option = {
+		name = "iv_estate_events.seize.o22"
+		trigger = {
+			has_estate = estate_shinukhorchi
+		}
+		country_event = { id = iv_estate_events.37 } 
+	}
 
 	option = {
 		name = "iv_estate_events.event.exit"
@@ -1340,7 +2033,7 @@ country_event = {
 
 
 ##########################################
-#### Seizing Land # Brahmins
+#### Seizing Land # Mages
 ##########################################
 
 country_event = {
@@ -1357,11 +2050,11 @@ country_event = {
 	option = {
 		name = "iv_estate_events.num.o5"
 		change_estate_land_share = {
-				estate = estate_brahmins
+				estate = estate_mages
 				share = -5
 			}
 		add_estate_loyalty = {
-		estate = estate_brahmins
+		estate = estate_mages
 		loyalty = -10
 			}		
 		}	
@@ -1370,16 +2063,16 @@ country_event = {
 		name = "iv_estate_events.num.o6"
 		trigger = { 
 			estate_territory = {
-			estate = estate_brahmins
+			estate = estate_mages
 			territory = 10
 			}
 		}
 		change_estate_land_share = {
-				estate = estate_brahmins
+				estate = estate_mages
 				share = -10
 			}	
 		add_estate_loyalty = {
-		estate = estate_brahmins
+		estate = estate_mages
 		loyalty = -15
 			}	
 		iv_title_seize_1 = yes
@@ -1389,16 +2082,16 @@ country_event = {
 		name = "iv_estate_events.num.o7"
 		trigger = { 
 			estate_territory = {
-			estate = estate_brahmins
+			estate = estate_mages
 			territory = 15
 			}
 		}
 		change_estate_land_share = {
-				estate = estate_brahmins
+				estate = estate_mages
 				share = -15
 			}
 		add_estate_loyalty = {
-		estate = estate_brahmins
+		estate = estate_mages
 		loyalty = -20
 			}	
 		iv_title_seize_1 = yes	
@@ -1409,16 +2102,16 @@ country_event = {
 		name = "iv_estate_events.num.o8"
 		trigger = { 
 			estate_territory = {
-			estate = estate_brahmins
+			estate = estate_mages
 			territory = 20
 			}
 		}
 		change_estate_land_share = {
-				estate = estate_brahmins
+				estate = estate_mages
 				share = -20
 			}
 		add_estate_loyalty = {
-		estate = estate_brahmins
+		estate = estate_mages
 		loyalty = -25
 			}	
 		iv_title_seize_1 = yes	
@@ -1433,7 +2126,7 @@ country_event = {
 
 
 ##########################################
-#### Seizing Land # Maratha
+#### Seizing Land # Adventurers
 ##########################################
 
 country_event = {
@@ -1450,11 +2143,11 @@ country_event = {
 	option = {
 		name = "iv_estate_events.num.o5"
 		change_estate_land_share = {
-				estate = estate_maratha
+				estate = estate_adventurers
 				share = -5
 			}
 		add_estate_loyalty = {
-		estate = estate_maratha
+		estate = estate_adventurers
 		loyalty = -10
 			}		
 		}	
@@ -1463,16 +2156,16 @@ country_event = {
 		name = "iv_estate_events.num.o6"
 		trigger = { 
 			estate_territory = {
-			estate = estate_maratha
+			estate = estate_adventurers
 			territory = 10
 			}
 		}
 		change_estate_land_share = {
-				estate = estate_maratha
+				estate = estate_adventurers
 				share = -10
 			}	
 		add_estate_loyalty = {
-		estate = estate_maratha
+		estate = estate_adventurers
 		loyalty = -15
 			}	
 		iv_title_seize_1 = yes
@@ -1482,16 +2175,16 @@ country_event = {
 		name = "iv_estate_events.num.o7"
 		trigger = { 
 			estate_territory = {
-			estate = estate_maratha
+			estate = estate_adventurers
 			territory = 15
 			}
 		}
 		change_estate_land_share = {
-				estate = estate_maratha
+				estate = estate_adventurers
 				share = -15
 			}
 		add_estate_loyalty = {
-		estate = estate_maratha
+		estate = estate_adventurers
 		loyalty = -20
 			}	
 		iv_title_seize_1 = yes	
@@ -1502,16 +2195,16 @@ country_event = {
 		name = "iv_estate_events.num.o8"
 		trigger = { 
 			estate_territory = {
-			estate = estate_maratha
+			estate = estate_adventurers
 			territory = 20
 			}
 		}
 		change_estate_land_share = {
-				estate = estate_maratha
+				estate = estate_adventurers
 				share = -20
 			}
 		add_estate_loyalty = {
-		estate = estate_maratha
+		estate = estate_adventurers
 		loyalty = -25
 			}	
 		iv_title_seize_1 = yes	
@@ -1525,7 +2218,7 @@ country_event = {
 }
 
 ##########################################
-#### Seizing Land # Vaisyas
+#### Seizing Land # Artificers
 ##########################################
 
 country_event = {
@@ -1542,11 +2235,11 @@ country_event = {
 	option = {
 		name = "iv_estate_events.num.o5"
 		change_estate_land_share = {
-				estate = estate_vaisyas
+				estate = estate_artificers
 				share = -5
 			}
 		add_estate_loyalty = {
-		estate = estate_vaisyas
+		estate = estate_artificers
 		loyalty = -10
 			}		
 		}	
@@ -1555,16 +2248,16 @@ country_event = {
 		name = "iv_estate_events.num.o6"
 		trigger = { 
 			estate_territory = {
-			estate = estate_vaisyas
+			estate = estate_artificers
 			territory = 10
 			}
 		}
 		change_estate_land_share = {
-				estate = estate_vaisyas
+				estate = estate_artificers
 				share = -10
 			}	
 		add_estate_loyalty = {
-		estate = estate_vaisyas
+		estate = estate_artificers
 		loyalty = -15
 			}	
 		iv_title_seize_1 = yes
@@ -1574,16 +2267,16 @@ country_event = {
 		name = "iv_estate_events.num.o7"
 		trigger = { 
 			estate_territory = {
-			estate = estate_vaisyas
+			estate = estate_artificers
 			territory = 15
 			}
 		}
 		change_estate_land_share = {
-				estate = estate_vaisyas
+				estate = estate_artificers
 				share = -15
 			}
 		add_estate_loyalty = {
-		estate = estate_vaisyas
+		estate = estate_artificers
 		loyalty = -20
 			}	
 		iv_title_seize_1 = yes	
@@ -1594,16 +2287,16 @@ country_event = {
 		name = "iv_estate_events.num.o8"
 		trigger = { 
 			estate_territory = {
-			estate = estate_vaisyas
+			estate = estate_artificers
 			territory = 20
 			}
 		}
 		change_estate_land_share = {
-				estate = estate_vaisyas
+				estate = estate_artificers
 				share = -20
 			}
 		add_estate_loyalty = {
-		estate = estate_vaisyas
+		estate = estate_artificers
 		loyalty = -25
 			}	
 		iv_title_seize_1 = yes	
@@ -2255,6 +2948,829 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_lowercastes
+			loyalty = -25
+		}	
+		iv_title_seize_1 = yes
+	}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.15 }
+	}
+}
+
+
+##########################################
+#### Seizing Land # Acolytes
+##########################################
+
+country_event = {
+
+	id = iv_estate_events.29
+	title = iv_estate_events.29.t
+	desc = iv_estate_events.generic.seize.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o5"
+		change_estate_land_share = {
+				estate = estate_acolytes
+				share = -5
+			}
+		add_estate_loyalty = {
+		estate = estate_acolytes
+		loyalty = -10
+			}		
+	}	
+	
+	option = {
+		name = "iv_estate_events.num.o6"
+		trigger = { 
+			estate_territory = {
+			estate = estate_acolytes
+			territory = 10
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_acolytes
+				share = -10
+			}	
+		add_estate_loyalty = {
+		estate = estate_acolytes
+		loyalty = -15
+			}	
+		iv_title_seize_1 = yes
+	}		
+	
+	option = {
+		name = "iv_estate_events.num.o7"
+		trigger = { 
+			estate_territory = {
+			estate = estate_acolytes
+			territory = 15
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_acolytes
+				share = -15
+			}
+		add_estate_loyalty = {
+		estate = estate_acolytes
+		loyalty = -20
+			}	
+		iv_title_seize_1 = yes	
+	
+	}		
+		
+	option = {
+		name = "iv_estate_events.num.o8"
+		trigger = { 
+			estate_territory = {
+				estate = estate_acolytes
+				territory = 20
+			}
+		}
+		change_estate_land_share = {
+			estate = estate_acolytes
+			share = -20
+		}
+		add_estate_loyalty = {
+			estate = estate_acolytes
+			loyalty = -25
+		}	
+		iv_title_seize_1 = yes
+	}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.15 }
+	}
+}
+
+
+##########################################
+#### Seizing Land # Eunuchs
+##########################################
+
+country_event = {
+
+	id = iv_estate_events.30
+	title = iv_estate_events.30.t
+	desc = iv_estate_events.generic.seize.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o5"
+		change_estate_land_share = {
+				estate = estate_eunuchs
+				share = -5
+			}
+		add_estate_loyalty = {
+		estate = estate_eunuchs
+		loyalty = -10
+			}		
+	}	
+	
+	option = {
+		name = "iv_estate_events.num.o6"
+		trigger = { 
+			estate_territory = {
+			estate = estate_eunuchs
+			territory = 10
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_eunuchs
+				share = -10
+			}	
+		add_estate_loyalty = {
+		estate = estate_eunuchs
+		loyalty = -15
+			}	
+		iv_title_seize_1 = yes
+	}		
+	
+	option = {
+		name = "iv_estate_events.num.o7"
+		trigger = { 
+			estate_territory = {
+			estate = estate_eunuchs
+			territory = 15
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_eunuchs
+				share = -15
+			}
+		add_estate_loyalty = {
+		estate = estate_eunuchs
+		loyalty = -20
+			}	
+		iv_title_seize_1 = yes	
+	
+	}		
+		
+	option = {
+		name = "iv_estate_events.num.o8"
+		trigger = { 
+			estate_territory = {
+				estate = estate_eunuchs
+				territory = 20
+			}
+		}
+		change_estate_land_share = {
+			estate = estate_eunuchs
+			share = -20
+		}
+		add_estate_loyalty = {
+			estate = estate_eunuchs
+			loyalty = -25
+		}	
+		iv_title_seize_1 = yes
+	}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.15 }
+	}
+}
+
+
+##########################################
+#### Seizing Land # Vampires
+##########################################
+
+country_event = {
+
+	id = iv_estate_events.31
+	title = iv_estate_events.31.t
+	desc = iv_estate_events.generic.seize.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o5"
+		change_estate_land_share = {
+				estate = estate_vampires
+				share = -5
+			}
+		add_estate_loyalty = {
+		estate = estate_vampires
+		loyalty = -10
+			}		
+	}	
+	
+	option = {
+		name = "iv_estate_events.num.o6"
+		trigger = { 
+			estate_territory = {
+			estate = estate_vampires
+			territory = 10
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_vampires
+				share = -10
+			}	
+		add_estate_loyalty = {
+		estate = estate_vampires
+		loyalty = -15
+			}	
+		iv_title_seize_1 = yes
+	}		
+	
+	option = {
+		name = "iv_estate_events.num.o7"
+		trigger = { 
+			estate_territory = {
+			estate = estate_vampires
+			territory = 15
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_vampires
+				share = -15
+			}
+		add_estate_loyalty = {
+		estate = estate_vampires
+		loyalty = -20
+			}	
+		iv_title_seize_1 = yes	
+	
+	}		
+		
+	option = {
+		name = "iv_estate_events.num.o8"
+		trigger = { 
+			estate_territory = {
+				estate = estate_vampires
+				territory = 20
+			}
+		}
+		change_estate_land_share = {
+			estate = estate_vampires
+			share = -20
+		}
+		add_estate_loyalty = {
+			estate = estate_vampires
+			loyalty = -25
+		}	
+		iv_title_seize_1 = yes
+	}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.15 }
+	}
+}
+
+
+##########################################
+#### Seizing Land # Daulophs
+##########################################
+
+country_event = {
+
+	id = iv_estate_events.32
+	title = iv_estate_events.32.t
+	desc = iv_estate_events.generic.seize.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o5"
+		change_estate_land_share = {
+				estate = estate_daulophs
+				share = -5
+			}
+		add_estate_loyalty = {
+		estate = estate_daulophs
+		loyalty = -10
+			}		
+	}	
+	
+	option = {
+		name = "iv_estate_events.num.o6"
+		trigger = { 
+			estate_territory = {
+			estate = estate_daulophs
+			territory = 10
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_daulophs
+				share = -10
+			}	
+		add_estate_loyalty = {
+		estate = estate_daulophs
+		loyalty = -15
+			}	
+		iv_title_seize_1 = yes
+	}		
+	
+	option = {
+		name = "iv_estate_events.num.o7"
+		trigger = { 
+			estate_territory = {
+			estate = estate_daulophs
+			territory = 15
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_daulophs
+				share = -15
+			}
+		add_estate_loyalty = {
+		estate = estate_daulophs
+		loyalty = -20
+			}	
+		iv_title_seize_1 = yes	
+	
+	}		
+		
+	option = {
+		name = "iv_estate_events.num.o8"
+		trigger = { 
+			estate_territory = {
+				estate = estate_daulophs
+				territory = 20
+			}
+		}
+		change_estate_land_share = {
+			estate = estate_daulophs
+			share = -20
+		}
+		add_estate_loyalty = {
+			estate = estate_daulophs
+			loyalty = -25
+		}	
+		iv_title_seize_1 = yes
+	}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.15 }
+	}
+}
+
+##########################################
+#### Seizing Land # Khelorvalshi
+##########################################
+
+country_event = {
+
+	id = iv_estate_events.33
+	title = iv_estate_events.33.t
+	desc = iv_estate_events.generic.seize.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o5"
+		change_estate_land_share = {
+				estate = estate_khelorvalshi
+				share = -5
+			}
+		add_estate_loyalty = {
+		estate = estate_khelorvalshi
+		loyalty = -10
+			}		
+	}	
+	
+	option = {
+		name = "iv_estate_events.num.o6"
+		trigger = { 
+			estate_territory = {
+			estate = estate_khelorvalshi
+			territory = 10
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_khelorvalshi
+				share = -10
+			}	
+		add_estate_loyalty = {
+		estate = estate_khelorvalshi
+		loyalty = -15
+			}	
+		iv_title_seize_1 = yes
+	}		
+	
+	option = {
+		name = "iv_estate_events.num.o7"
+		trigger = { 
+			estate_territory = {
+			estate = estate_khelorvalshi
+			territory = 15
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_khelorvalshi
+				share = -15
+			}
+		add_estate_loyalty = {
+		estate = estate_khelorvalshi
+		loyalty = -20
+			}	
+		iv_title_seize_1 = yes	
+	
+	}		
+		
+	option = {
+		name = "iv_estate_events.num.o8"
+		trigger = { 
+			estate_territory = {
+				estate = estate_khelorvalshi
+				territory = 20
+			}
+		}
+		change_estate_land_share = {
+			estate = estate_khelorvalshi
+			share = -20
+		}
+		add_estate_loyalty = {
+			estate = estate_khelorvalshi
+			loyalty = -25
+		}	
+		iv_title_seize_1 = yes
+	}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.15 }
+	}
+}
+
+##########################################
+#### Seizing Land # Kabiurgarko
+##########################################
+
+country_event = {
+
+	id = iv_estate_events.34
+	title = iv_estate_events.34.t
+	desc = iv_estate_events.generic.seize.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o5"
+		change_estate_land_share = {
+				estate = estate_kabiurgarko
+				share = -5
+			}
+		add_estate_loyalty = {
+		estate = estate_kabiurgarko
+		loyalty = -10
+			}		
+	}	
+	
+	option = {
+		name = "iv_estate_events.num.o6"
+		trigger = { 
+			estate_territory = {
+			estate = estate_kabiurgarko
+			territory = 10
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_kabiurgarko
+				share = -10
+			}	
+		add_estate_loyalty = {
+		estate = estate_kabiurgarko
+		loyalty = -15
+			}	
+		iv_title_seize_1 = yes
+	}		
+	
+	option = {
+		name = "iv_estate_events.num.o7"
+		trigger = { 
+			estate_territory = {
+			estate = estate_kabiurgarko
+			territory = 15
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_kabiurgarko
+				share = -15
+			}
+		add_estate_loyalty = {
+		estate = estate_kabiurgarko
+		loyalty = -20
+			}	
+		iv_title_seize_1 = yes	
+	
+	}		
+		
+	option = {
+		name = "iv_estate_events.num.o8"
+		trigger = { 
+			estate_territory = {
+				estate = estate_kabiurgarko
+				territory = 20
+			}
+		}
+		change_estate_land_share = {
+			estate = estate_kabiurgarko
+			share = -20
+		}
+		add_estate_loyalty = {
+			estate = estate_kabiurgarko
+			loyalty = -25
+		}	
+		iv_title_seize_1 = yes
+	}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.15 }
+	}
+}
+
+##########################################
+#### Seizing Land # Ajgriijarul
+##########################################
+
+country_event = {
+
+	id = iv_estate_events.35
+	title = iv_estate_events.35.t
+	desc = iv_estate_events.generic.seize.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o5"
+		change_estate_land_share = {
+				estate = estate_ajgriijarul
+				share = -5
+			}
+		add_estate_loyalty = {
+		estate = estate_ajgriijarul
+		loyalty = -10
+			}		
+	}	
+	
+	option = {
+		name = "iv_estate_events.num.o6"
+		trigger = { 
+			estate_territory = {
+			estate = estate_ajgriijarul
+			territory = 10
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_ajgriijarul
+				share = -10
+			}	
+		add_estate_loyalty = {
+		estate = estate_ajgriijarul
+		loyalty = -15
+			}	
+		iv_title_seize_1 = yes
+	}		
+	
+	option = {
+		name = "iv_estate_events.num.o7"
+		trigger = { 
+			estate_territory = {
+			estate = estate_ajgriijarul
+			territory = 15
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_ajgriijarul
+				share = -15
+			}
+		add_estate_loyalty = {
+		estate = estate_ajgriijarul
+		loyalty = -20
+			}	
+		iv_title_seize_1 = yes	
+	
+	}		
+		
+	option = {
+		name = "iv_estate_events.num.o8"
+		trigger = { 
+			estate_territory = {
+				estate = estate_ajgriijarul
+				territory = 20
+			}
+		}
+		change_estate_land_share = {
+			estate = estate_ajgriijarul
+			share = -20
+		}
+		add_estate_loyalty = {
+			estate = estate_ajgriijarul
+			loyalty = -25
+		}	
+		iv_title_seize_1 = yes
+	}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.15 }
+	}
+}
+
+##########################################
+#### Seizing Land # Chumijemoya
+##########################################
+
+country_event = {
+
+	id = iv_estate_events.36
+	title = iv_estate_events.36.t
+	desc = iv_estate_events.generic.seize.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o5"
+		change_estate_land_share = {
+				estate = estate_chumijemoya
+				share = -5
+			}
+		add_estate_loyalty = {
+		estate = estate_chumijemoya
+		loyalty = -10
+			}		
+	}	
+	
+	option = {
+		name = "iv_estate_events.num.o6"
+		trigger = { 
+			estate_territory = {
+			estate = estate_chumijemoya
+			territory = 10
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_chumijemoya
+				share = -10
+			}	
+		add_estate_loyalty = {
+		estate = estate_chumijemoya
+		loyalty = -15
+			}	
+		iv_title_seize_1 = yes
+	}		
+	
+	option = {
+		name = "iv_estate_events.num.o7"
+		trigger = { 
+			estate_territory = {
+			estate = estate_chumijemoya
+			territory = 15
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_chumijemoya
+				share = -15
+			}
+		add_estate_loyalty = {
+		estate = estate_chumijemoya
+		loyalty = -20
+			}	
+		iv_title_seize_1 = yes	
+	
+	}		
+		
+	option = {
+		name = "iv_estate_events.num.o8"
+		trigger = { 
+			estate_territory = {
+				estate = estate_chumijemoya
+				territory = 20
+			}
+		}
+		change_estate_land_share = {
+			estate = estate_chumijemoya
+			share = -20
+		}
+		add_estate_loyalty = {
+			estate = estate_chumijemoya
+			loyalty = -25
+		}	
+		iv_title_seize_1 = yes
+	}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+			country_event = { id = iv_estate_events.15 }
+	}
+}
+
+##########################################
+#### Seizing Land # Shinukhorchi
+##########################################
+
+country_event = {
+
+	id = iv_estate_events.37
+	title = iv_estate_events.37.t
+	desc = iv_estate_events.generic.seize.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o5"
+		change_estate_land_share = {
+				estate = estate_shinukhorchi
+				share = -5
+			}
+		add_estate_loyalty = {
+		estate = estate_shinukhorchi
+		loyalty = -10
+			}		
+	}	
+	
+	option = {
+		name = "iv_estate_events.num.o6"
+		trigger = { 
+			estate_territory = {
+			estate = estate_shinukhorchi
+			territory = 10
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_shinukhorchi
+				share = -10
+			}	
+		add_estate_loyalty = {
+		estate = estate_shinukhorchi
+		loyalty = -15
+			}	
+		iv_title_seize_1 = yes
+	}		
+	
+	option = {
+		name = "iv_estate_events.num.o7"
+		trigger = { 
+			estate_territory = {
+			estate = estate_shinukhorchi
+			territory = 15
+			}
+		}
+		change_estate_land_share = {
+				estate = estate_shinukhorchi
+				share = -15
+			}
+		add_estate_loyalty = {
+		estate = estate_shinukhorchi
+		loyalty = -20
+			}	
+		iv_title_seize_1 = yes	
+	
+	}		
+		
+	option = {
+		name = "iv_estate_events.num.o8"
+		trigger = { 
+			estate_territory = {
+				estate = estate_shinukhorchi
+				territory = 20
+			}
+		}
+		change_estate_land_share = {
+			estate = estate_shinukhorchi
+			share = -20
+		}
+		add_estate_loyalty = {
+			estate = estate_shinukhorchi
 			loyalty = -25
 		}	
 		iv_title_seize_1 = yes
