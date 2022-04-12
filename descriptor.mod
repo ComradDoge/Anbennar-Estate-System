@@ -7,5 +7,5 @@ tags={
 	"Estates"
 }
 name="Doge - Anbennar Estate System"
-supported_version="1.32.2"
+supported_version="1.33.*"
 path="mod/doge_anbennar_estate_system"

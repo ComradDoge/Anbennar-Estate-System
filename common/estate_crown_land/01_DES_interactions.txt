@@ -58,14 +58,27 @@ interaction = {
 	cooldown_months = 60
 
     trigger = {
-        crown_land_share = 0.1
+        crown_land_share = 10
         NOT = { num_of_rebel_armies = 1 }
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		hidden_trigger = { has_any_estates = yes }
-		has_factions = no
+		if = {
+			limit = { any_owned_province = { has_province_modifier = JY_LF_trading } }
+			custom_trigger_tooltip = {
+				tooltip = JY_LF_not_trading
+				NOT = { any_owned_province = { has_province_modifier = JY_LF_trading } }
+			}
+		}
     }
     effect = {
-	    country_event = { id = iv_estate_events.1 }               
+	    country_event = { id = iv_estate_events.1 }
+		if = {
+			limit = {
+				has_country_flag = recent_land_distribution
+			}
+			clr_country_flag = recent_land_distribution
+		}
+		set_country_flag = recent_land_distribution          
     }
 	ai_will_do = {
 		factor = 1
@@ -875,12 +888,17 @@ interaction = {
 
     trigger = {
 		ai = yes
-        crown_land_share = 0.2
+        crown_land_share = 10
         NOT = { num_of_rebel_armies = 1 }
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		hidden_trigger = { has_any_estates = yes }
-		has_factions = no
-		is_colonial_nation = no
+		if = {
+			limit = { any_owned_province = { has_province_modifier = JY_LF_trading } }
+			custom_trigger_tooltip = {
+				tooltip = JY_LF_not_trading
+				NOT = { any_owned_province = { has_province_modifier = JY_LF_trading } }
+			}
+		}
     }
     effect = {
 		if = {
