@@ -231,7 +231,19 @@ guiTypes = {
 				quadTextureSprite = "GFX_scroll_right_gold"
 				position = { x=0 y =0}
 			}
-		}	
+		}
+
+		instantTextBoxType = {
+			name = "privileges_count"
+			position = { x = 690 y = 20 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0 }	
+			text = ""	
+			maxWidth = 60
+			maxHeight = 20
+			format = centre
+		}
 	}
 
 	windowType = {
@@ -608,7 +620,7 @@ guiTypes = {
 			name = "estates_listbox"
 			backGround = ""
 			position = { x = 30 y = 275 }   
-			size = { x = 750 y = 300 }  #700/ 1500
+			size = { x = 750 y = 300 }  #1000/ 1500
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
