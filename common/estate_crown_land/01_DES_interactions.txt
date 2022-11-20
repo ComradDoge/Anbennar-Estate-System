@@ -249,24 +249,81 @@ interaction = {
 			add_karma = -10
 		}		
 	}
-ai_will_do = {
-		factor = 25
+	ai_will_do = {
+		factor = 50
+		modifier = {
+			factor = 0
+			# This check is needed to prevent collision with day-1 event theocracy.1
+			uses_devotion = yes
+			has_heir = no
+		}
+		# modifier = {
+			# factor = 0
+			# # This is a hack for countries with enclaves that can be hard to get to, to kill the rebels
+			# OR = {
+				# tag = TEU
+				# tag = KOL
+				# # Add more as necessary
+			# }
+			# NOT = {
+				# estate_loyalty = {
+					# estate = all
+					# loyalty = 50
+				# }
+			# }
+		# }
+		modifier = {
+			factor = 0.2
+			NOT = {
+				estate_loyalty = {
+					estate = all
+					loyalty = 50
+				}
+			}
+			NOT = {
+				army_size = 6
+			}
+		}
+		modifier = {
+			factor = 0.2
+
+			# This custom event target is set by code. If ai_will_do is higher when this is set (and >50) than when it isn't,
+			# the AI will raise maintenance and wait until the event target doesn't increase the ai_will_do score
+			NOT = { has_saved_event_target = ai_suppose_full_maintenance }
+
+			NOT = {
+				estate_loyalty = {
+					estate = all
+					loyalty = 50
+				}
+			}
+
+			OR = {
+				NOT = { land_maintenance = 0.9 }
+				num_mothballed_forts = 1
+				NOT = { all_regiments_morale_percent = 90 }
+				any_owned_province = {
+					fort_level = 1
+					NOT = { garrison = 400 }
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			crown_land_share = 30
 			has_any_disaster = yes
 			NOT = { #sorry, scripted triggers glitched out
 				OR = {
-					# has_disaster = estate_mages_disaster
+					# has_disaster = estate_brahmins_disaster
 					has_disaster = estate_burghers_disaster
 					has_disaster = estate_church_disaster
 					has_disaster = estate_cossacks_disaster
-					has_disaster = estate_lowercastes_disaster
-					# has_disaster = estate_middlecastes_disaster
+					has_disaster = estate_dhimmi_disaster
+					# has_disaster = estate_jains_disaster
 					# has_disaster = estate_maratha_disaster
 					has_disaster = estate_nobility_disaster
 					has_disaster = estate_nomadic_tribes_disaster
-					# has_disaster = estate_uppercastes_disaster
+					# has_disaster = estate_rajput_disaster
 					# has_disaster = estate_vaisyas_disaster
 					
 					#Anbennar
@@ -281,20 +338,26 @@ ai_will_do = {
 				}
 			}
 		}
-		# Anbennar - removed this shitty factor
+		# Anbennar - removed this factor due to adventurers
 		# modifier = {
-			# factor = 0
+			# factor = 0.5
 			# crown_land_share = 30
+			# NOT = {
+				# estate_loyalty = {
+					# estate = all
+					# loyalty = 50
+				# }
+			# }
 			# if = {
 				# limit = { num_of_cities = 50 }
-				# NOT = { army_size_percentage = 0.5 }
+				# NOT = { army_size_percentage = 0.2 }
 			# }
 			# else_if = {
 				# limit = { num_of_cities = 25 }
-				# NOT = { army_size_percentage = 0.75 }
+				# NOT = { army_size_percentage = 0.3 }
 			# }
 			# else = {
-				# NOT = { army_size_percentage = 0.9 }
+				# NOT = { army_size_percentage = 0.5 }
 			# }
 			# if = {
 				# limit = { is_emperor = yes }
@@ -303,33 +366,21 @@ ai_will_do = {
 			# NOT = { army_size = 100 }
 			# NOT = { #sorry, scripted triggers glitched out
 				# OR = {
-					# # has_disaster = estate_mages_disaster
+					# has_disaster = estate_brahmins_disaster
 					# has_disaster = estate_burghers_disaster
 					# has_disaster = estate_church_disaster
 					# has_disaster = estate_cossacks_disaster
-					# has_disaster = estate_lowercastes_disaster
-					# # has_disaster = estate_middlecastes_disaster
-					# # has_disaster = estate_maratha_disaster
+					# has_disaster = estate_dhimmi_disaster
+					# has_disaster = estate_jains_disaster
+					# has_disaster = estate_maratha_disaster
 					# has_disaster = estate_nobility_disaster
 					# has_disaster = estate_nomadic_tribes_disaster
-					# # has_disaster = estate_uppercastes_disaster
-					# # has_disaster = estate_vaisyas_disaster
-					
-					# #Anbennar
-					# has_disaster = estate_monstrous_tribes_disaster
-					# has_disaster = estate_mages_disaster
-					# has_disaster = estate_artificers_disaster
-					# has_disaster = estate_adventurers_disaster
-					# has_disaster = estate_castonath_patricians_disaster
-					# has_disaster = estate_vampires_broken_masquerade_disaster
-					# has_disaster = estate_vampires_install_thrall_disaster
-					# has_disaster = estate_vampires_restore_masquerade_disaster
-					
-					
-					# # has_disaster_progress = {
-						# # disaster = estate_mages_disaster
-						# # value = 5
-					# # }
+					# has_disaster = estate_rajput_disaster
+					# has_disaster = estate_vaisyas_disaster
+					# has_disaster_progress = {
+						# disaster = estate_brahmins_disaster
+						# value = 5
+					# }
 					# has_disaster_progress = {
 						# disaster = estate_burghers_disaster
 						# value = 5
@@ -343,17 +394,17 @@ ai_will_do = {
 						# value = 5
 					# }
 					# has_disaster_progress = {
-						# disaster = estate_lowercastes_disaster
+						# disaster = estate_dhimmi_disaster
 						# value = 5
 					# }
-					# # has_disaster_progress = {
-						# # disaster = estate_middlecastes_disaster
-						# # value = 5
-					# # }
-					# # has_disaster_progress = {
-						# # disaster = estate_maratha_disaster
-						# # value = 5
-					# # }
+					# has_disaster_progress = {
+						# disaster = estate_jains_disaster
+						# value = 5
+					# }
+					# has_disaster_progress = {
+						# disaster = estate_maratha_disaster
+						# value = 5
+					# }
 					# has_disaster_progress = {
 						# disaster = estate_nobility_disaster
 						# value = 5
@@ -362,46 +413,12 @@ ai_will_do = {
 						# disaster = estate_nomadic_tribes_disaster
 						# value = 5
 					# }
-					# # has_disaster_progress = {
-						# # disaster = estate_uppercastes_disaster
-						# # value = 5
-					# # }
-					# # has_disaster_progress = {
-						# # disaster = estate_vaisyas_disaster
-						# # value = 5
-					# # }
-					
-					# #Anbennar
 					# has_disaster_progress = {
-						# disaster = estate_monstrous_tribes_disaster
+						# disaster = estate_rajput_disaster
 						# value = 5
 					# }
 					# has_disaster_progress = {
-						# disaster = estate_mages_disaster
-						# value = 5
-					# }
-					# has_disaster_progress = {
-						# disaster = estate_artificers_disaster
-						# value = 5
-					# }
-					# has_disaster_progress = {
-						# disaster = estate_adventurers_disaster
-						# value = 5
-					# }
-					# has_disaster_progress = {
-						# disaster = estate_castonath_patricians_disaster
-						# value = 5
-					# }
-					# has_disaster_progress = {
-						# disaster = estate_vampires_broken_masquerade_disaster
-						# value = 5
-					# }
-					# has_disaster_progress = {
-						# disaster = estate_vampires_install_thrall_disaster
-						# value = 5
-					# }
-					# has_disaster_progress = {
-						# disaster = estate_vampires_restore_masquerade_disaster
+						# disaster = estate_vaisyas_disaster
 						# value = 5
 					# }
 				# }
@@ -446,91 +463,26 @@ ai_will_do = {
 			factor = 0.5
 			average_unrest = 3
 		}
-		# Anbennar - removed these shitty factors
-		# modifier = {
-			# factor = 0.5
-			# has_country_flag = recent_land_seizure
-			# NOT = {
-				# had_country_flag = {
-					# flag = recent_land_seizure
-					# days = 5475
-				# }
-			# }
-		# }
-		# modifier = {
-			# factor = 0.75
-			# has_country_flag = recent_land_seizure
-			# NOT = {
-				# had_country_flag = {
-					# flag = recent_land_seizure
-					# days = 10950
-				# }
-			# }
-		# }
-		# modifier = {
-			# factor = 0.5
-			# has_country_flag = recent_land_distribution
-			# NOT = {
-				# had_country_flag = {
-					# flag = recent_land_distribution
-					# days = 5475
-				# }
-			# }
-		# }
 		modifier = {
-			factor = 0.5
-			NOT = {
-				estate_loyalty = {
-					estate = all
-					loyalty = 50
-				}
+			factor = 1.2
+			estate_loyalty = {
+				estate = all
+				loyalty = 50
 			}
 		}
-		modifier = {
-			factor = 0.5
-			NOT = {
-				estate_loyalty = {
-					estate = all
-					loyalty = 40
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			NOT = {
-				estate_loyalty = {
-					estate = all
-					loyalty = 35 # Estate is almost disloyal
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				estate_loyalty = {
-					estate = all
-					loyalty = 30 # Estate is basically disloyal
-				}
-			}
-		}
-		# Anbennar - removed this shitty factor
-		# modifier = {
-			# factor = 0.75
-			# NOT = { num_of_owned_areas = 2 }
-		# }
 		modifier = {
 			factor = 10
 			OR = {
-				# has_disaster = estate_mages_disaster
+				# has_disaster = estate_brahmins_disaster
 				has_disaster = estate_burghers_disaster
 				has_disaster = estate_church_disaster
 				has_disaster = estate_cossacks_disaster
-				has_disaster = estate_lowercastes_disaster
-				# has_disaster = estate_middlecastes_disaster
+				has_disaster = estate_dhimmi_disaster
+				# has_disaster = estate_jains_disaster
 				# has_disaster = estate_maratha_disaster
 				has_disaster = estate_nobility_disaster
 				has_disaster = estate_nomadic_tribes_disaster
-				# has_disaster = estate_uppercastes_disaster
+				# has_disaster = estate_rajput_disaster
 				# has_disaster = estate_vaisyas_disaster
 				
 
@@ -546,7 +498,7 @@ ai_will_do = {
 					
 					
 				# has_disaster_progress = {
-					# disaster = estate_mages_disaster
+					# disaster = estate_brahmins_disaster
 					# value = 5
 				# }
 				has_disaster_progress = {
@@ -562,11 +514,11 @@ ai_will_do = {
 					value = 5
 				}
 				has_disaster_progress = {
-					disaster = estate_lowercastes_disaster
+					disaster = estate_dhimmi_disaster
 					value = 5
 				}
 				# has_disaster_progress = {
-					# disaster = estate_middlecastes_disaster
+					# disaster = estate_jains_disaster
 					# value = 5
 				# }
 				# has_disaster_progress = {
@@ -582,7 +534,7 @@ ai_will_do = {
 					value = 5
 				}
 				# has_disaster_progress = {
-					# disaster = estate_uppercastes_disaster
+					# disaster = estate_rajput_disaster
 					# value = 5
 				# }
 				# has_disaster_progress = {
@@ -921,7 +873,7 @@ interaction = {
 ####### Cast Spell
 ###################################################################
 
-interaction = {
+interaction = { # Cast Spell
     key = cast_spell
     random_seed = random
 	cooldown_months = 0
@@ -933,13 +885,19 @@ interaction = {
 				has_estate = estate_mages
 				has_estate = estate_acolytes
 				tag = Y01	#azjakuma
+				has_estate_privilege = artifice_invention_korashi_tuners
 			}
 		}
 		if = { limit = { has_estate = estate_mages }
 			estate_influence = { estate = estate_mages influence = 15 }
-			NOT = { has_estate_privilege = estate_mages_cast_spells }
-			if = { limit = { tag = I02 }	#krak
-				mission_completed = krak_relighting_forges
+			if = { limit = { tag = Y63 has_country_flag = Y63_unlocked_minor_runes }
+				hidden_trigger = { NOT = { has_country_flag = V63_runes_menu_open } }
+			}
+			else = {
+				NOT = { has_estate_privilege = estate_mages_cast_spells }
+				if = { limit = { tag = I02 }	#krak
+					mission_completed = krak_relighting_forges
+				}
 			}
 		}
 		else_if = { limit = { has_estate = estate_acolytes }
@@ -976,18 +934,28 @@ interaction = {
 			}
 			hidden_trigger = { NOT = { has_country_flag = azjakuma_magic_menu_opened } }
 		}
+		else_if = { limit = { has_estate_privilege = artifice_invention_korashi_tuners }
+			NOT = { has_country_modifier = magic_cooldown }
+		}
     }
     effect = {
 		if = { limit = { has_estate = estate_mages }
-			custom_tooltip = opens_magic_estate_menu_tt
-			custom_tooltip = cast_spell_effect_tt
-			hidden_effect = {
-				set_estate_privilege = estate_mages_cast_spells
-				if = { limit = { tag = I02 }
-					country_event = { id = flavor_krak.100 }
-				}
-				else = {
-					country_event = { id = magic_estate.1 }
+			if = { limit = { tag = Y63 has_country_flag = Y63_unlocked_minor_runes }
+				custom_tooltip = Y63_open_runes_manu_tt
+				set_country_flag = V63_runes_menu_open
+				hidden_effect = { country_event = { id = verkalozovar_events.100 } }
+			}
+			else = {
+				custom_tooltip = opens_magic_estate_menu_tt
+				custom_tooltip = cast_spell_effect_tt
+				hidden_effect = {
+					set_estate_privilege = estate_mages_cast_spells
+					if = { limit = { tag = I02 }
+						country_event = { id = flavor_krak.100 }
+					}
+					else = {
+						country_event = { id = magic_estate.1 }
+					}
 				}
 			}
 		}
@@ -1008,6 +976,13 @@ interaction = {
 			}
 			clr_country_flag = remove_azjakuma_casting_spells
 		}
+		else_if = { limit = { has_estate_privilege = artifice_invention_korashi_tuners }
+			custom_tooltip = opens_magic_estate_menu_tt
+			custom_tooltip = cast_spell_effect_tt
+			hidden_effect = {
+				country_event = { id = magic_estate.1 }
+			}
+		}
 		clr_country_flag = revoke_mage_estate_spells
     }
 	ai_will_do = {
@@ -1016,7 +991,7 @@ interaction = {
 }
 
 
-interaction = {
+interaction = { # Research Artificery
     key = research_artificery
     random_seed = random
 	cooldown_months = 0
@@ -1026,7 +1001,10 @@ interaction = {
 			tooltip = has_artificer_estate_tt
 			OR = {
 				has_estate = estate_artificers
-				has_estate = estate_dragon_command
+				AND = {
+					has_estate = estate_dragon_command
+					has_institution = manufactories
+				}
 			}
 		}
 		if = {
@@ -1036,9 +1014,9 @@ interaction = {
 					has_estate = estate_dragon_command
 				}
 			}
-			adm_power = 50
-			dip_power = 50
-			mil_power = 50
+			adm_power = 30
+			dip_power = 30
+			mil_power = 30
 			custom_trigger_tooltip = {
 				tooltip = is_not_researching_invention_tt
 				NOT = { has_estate_privilege = artifice_invention_research_privilege }
@@ -1050,41 +1028,50 @@ interaction = {
     }
     effect = {
 		custom_tooltip = start_artificery_research_tt
-		add_adm_power = -50
-		add_dip_power = -50
-		add_mil_power = -50
-		if = { limit = { has_estate = estate_artificers }
-			hidden_effect = {
-				if = {
-					limit = {
-						NOT = { has_estate_privilege = estate_artificers_organization_state }
-						NOT = { has_estate_privilege = estate_artificers_organization_feiten_shuimu_cadre }
-					}
+		add_adm_power = -30
+		add_dip_power = -30
+		add_mil_power = -30
+		if = {
+			limit = {
+				OR = {
+					has_estate = estate_artificers
+					has_estate = estate_dragon_command
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_estate_privilege = estate_artificers_organization_state }
+					NOT = { has_estate_privilege = estate_artificers_organization_feiten_shuimu_cadre }
+				}
+				custom_tooltip = set_research_privilege_tt
+				hidden_effect = {
 					set_estate_privilege = artifice_invention_research_privilege
 					country_event = { id = artifice_events.1 }
 				}
-				else = {
-					if = { limit = { tag = Y20 }	#Feiten
-						if = {
-							limit = {
-								mission_completed = feiten_secrets_of_the_precursors
-								OR = {
-									any_subject_country = { any_owned_province = { trade_goods = precursor_relics } }
-									any_owned_province = { trade_goods = precursor_relics }
-								}
+			}
+			else = {
+				if = { limit = { tag = event_target:feiten_or_was_feiten_target }	#Feiten
+					if = {
+						limit = {
+							mission_completed = feiten_secrets_of_the_precursors
+							OR = {
+								any_subject_country = { any_owned_province = { trade_goods = precursor_relics } }
+								any_owned_province = { trade_goods = precursor_relics }
 							}
-							set_country_flag = artificery_research_choice_ongoing
-							country_event = { id = artifice_events.10 }
 						}
-						else = {
-							set_estate_privilege = artifice_invention_directed_research
-						}
+						set_country_flag = artificery_research_choice_ongoing
+						hidden_effect = { country_event = { id = artifice_events.10 } }
 					}
 					else = {
-						set_estate_privilege = artifice_invention_directed_research
+						custom_tooltip = set_research_privilege_tt
+						hidden_effect = { set_estate_privilege = artifice_invention_directed_research }
 					}
-					country_event = { id = artifice_events.4 }	#fast research
 				}
+				else = {
+					custom_tooltip = set_research_privilege_tt
+					hidden_effect = { set_estate_privilege = artifice_invention_directed_research }
+				}
+				hidden_effect = { country_event = { id = artifice_events.4 } }	#fast research
 			}
 		}
     }
