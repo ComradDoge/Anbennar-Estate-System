@@ -235,6 +235,13 @@ country_event = {
 		}
 		country_event = { id = iv_estate_events.66 } 
 	}
+	option = {
+		name = "iv_estate_events.sale.o30"
+		trigger = {
+			has_estate = estate_castonath_patricians
+		}
+		country_event = { id = iv_estate_events.67 } 
+	}
 
 	option = {
 		name = "iv_estate_events.event.exit"
@@ -1976,7 +1983,64 @@ country_event = {
 	}
 }
 
+##########################################
+#### Land Distribution # Patricians
+##########################################
+country_event = {
 
+	id = iv_estate_events.67
+	title = iv_estate_events.67.t
+	desc = iv_estate_events.generic.sale.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o1"
+		change_estate_land_share = {
+			estate = estate_castonath_patricians
+			share = 5
+		}
+		iv_title_sale_1 = yes	
+	}	
+	
+	option = {
+		name = "iv_estate_events.num.o2"
+		trigger = { crown_land_share = 10 }
+		change_estate_land_share = {
+			estate = estate_castonath_patricians
+			share = 10
+		}
+		iv_title_sale_2 = yes		
+	}		
+	
+	option = {
+		name = "iv_estate_events.num.o3"
+		trigger = { crown_land_share = 15 }
+		change_estate_land_share = {
+			estate = estate_castonath_patricians
+			share = 15
+		}
+		iv_title_sale_3 = yes		
+	}		
+		
+	option = {
+		name = "iv_estate_events.num.o4"
+		trigger = { crown_land_share = 20 }
+		change_estate_land_share = {
+			estate = estate_castonath_patricians
+			share = 20
+		}
+		iv_title_sale_4 = yes	
+	}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+		country_event = { id = iv_estate_events.1 }
+	}
+}
 
 
 
@@ -2275,6 +2339,14 @@ country_event = {
 			has_estate = estate_gerunanin
 		}
 		country_event = { id = iv_estate_events.44 } 
+	}
+
+	option = {
+		name = "iv_estate_events.seize.o30"
+		trigger = {
+			has_estate = estate_castonath_patricians
+		}
+		country_event = { id = iv_estate_events.45 }
 	}
 
 
@@ -4958,5 +5030,98 @@ country_event = {
 	option = {
 		name = "iv_estate_events.event.return"
 			country_event = { id = iv_estate_events.15 }
+	}
+}
+
+
+##########################################
+#### Seizing Land # Patricians
+##########################################
+
+country_event = {
+
+	id = iv_estate_events.45
+	title = iv_estate_events.45.t
+	desc = iv_estate_events.generic.seize.d
+	
+	picture = DIPLOMACY_eventPicture
+		
+	is_triggered_only = yes
+
+
+	option = {
+		name = "iv_estate_events.num.o5"
+		change_estate_land_share = {
+			estate = estate_castonath_patricians
+			share = -5
+		}	
+		add_estate_loyalty = {
+			estate = estate_castonath_patricians
+			loyalty = -10
+		}	
+		iv_title_seize_1 = yes	
+	}	
+	
+	option = {
+		name = "iv_estate_events.num.o6"
+		trigger = { 
+			estate_territory = {
+				estate = estate_castonath_patricians
+				territory = 10
+			}
+		}
+		change_estate_land_share = {
+			estate = estate_castonath_patricians
+			share = -10
+		}	
+		add_estate_loyalty = {
+			estate = estate_castonath_patricians
+			loyalty = -20
+		}	
+		iv_title_seize_1 = yes
+	}		
+	
+	option = {
+		name = "iv_estate_events.num.o7"
+		trigger = { 
+			estate_territory = {
+				estate = estate_castonath_patricians
+				territory = 15
+			}
+		}
+		change_estate_land_share = {
+			estate = estate_castonath_patricians
+			share = -15
+		}	
+		add_estate_loyalty = {
+			estate = estate_castonath_patricians
+			loyalty = -30
+		}	
+		iv_title_seize_1 = yes
+	
+	}		
+		
+	option = {
+		name = "iv_estate_events.num.o8"
+		trigger = { 
+			estate_territory = {
+				estate = estate_castonath_patricians
+				territory = 20
+			}
+		}
+		change_estate_land_share = {
+			estate = estate_castonath_patricians
+			share = -20
+		}	
+		add_estate_loyalty = {
+			estate = estate_castonath_patricians
+			loyalty = -40
+		}	
+		iv_title_seize_1 = yes
+	}	
+
+	option = {
+		name = "iv_estate_events.event.return"
+		country_event = { id = iv_estate_events.15 }
 	}
 }
