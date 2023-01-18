@@ -176,6 +176,3 @@
  CONFIRM_CONSOLIDATE_DEVELOPMENT_TEXT:2 "Channel development from §Y$NAME$§! for our own needs. Much of the development lost will end up in our capital, some will be distributed amongst our other states, some will be lost.\n\n- This state will lose $DEVELOPMENT|Y$ development.\n- In total, we will gain $DEVGAINED|Y$ development."
  CONFIRM_CONSOLIDATE_DEVELOPMENT_SUBJECT:0 ""
  CANNOT_CONCENTRATE_DEVELOPMENT_WRONG_SUBJECT_TYPE: "The following subjects cannot have their development stolen :\n - §YColonial Nations§!\n - §YTributaries§!\n - §YDaimyos§!"
-
-
- mechanic_seizing_land_loyalty_yes:1 ""
