@@ -40,6 +40,8 @@
  iv_estate_events.sale.o28: "Sell Land to the §TTiger Command§!"
  iv_estate_events.sale.o29: "Sell Land to the §TGerunanin§!"
  iv_estate_events.sale.o30: "Sell Land to the §TPatricians§!"
+ iv_estate_events.sale.o31: "Sell Land to the §TAhati§!"
+ iv_estate_events.sale.o32: "Sell Land to the §TAdeen§!"
 
  # 2-14 / 51-99
  # Estate Specific Sale Screen
@@ -73,6 +75,8 @@
  iv_estate_events.65.t: "Sale of Titles to the §TTiger Command§!"
  iv_estate_events.66.t: "Sale of Titles to the §TGerunanin§!"
  iv_estate_events.67.t: "Sale of Titles to the §TPatricians§!"
+ iv_estate_events.68.t: "Sale of Titles to the §TAhati§!"
+ iv_estate_events.69.t: "Sale of Titles to the §TAdeen§!"
 
  # Sell Land Number Screen
  iv_estate_events.num.o1: "§w5%§!" 
@@ -120,6 +124,8 @@
  iv_estate_events.seize.o28: "Seize land from the §TTiger Command§!"
  iv_estate_events.seize.o29: "Seize land from the §TGerunanin§!"
  iv_estate_events.seize.o30: "Seize land from the §TPatricians§!"
+ iv_estate_events.seize.o31: "Seize land from the §TAhati§!"
+ iv_estate_events.seize.o32: "Seize land from the §TAdeen§!"
 
  # 16-50 / 100-150
  # Estate Specific Seize Screen
@@ -153,6 +159,8 @@
  iv_estate_events.43.t: "Seize land from the §TTiger Command§!"
  iv_estate_events.44.t: "Seize land from the §TGerunanin§!"
  iv_estate_events.45.t: "Seize land from the §TPatricians§!"
+ iv_estate_events.46.t: "Seize land from the §TAhati§!"
+ iv_estate_events.47.t: "Seize land from the §TAdeen§!"
 
  # Estate Interactions and Modifiers
  estate_interaction_idea_variation_2: "Display Legitimacy"

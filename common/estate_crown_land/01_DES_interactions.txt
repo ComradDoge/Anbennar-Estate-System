@@ -16,7 +16,16 @@ interaction = {
     effect = {
         custom_tooltip = ESTATES_SUMMON_THE_DIET_DESC
         hidden_effect = {
-	        country_event = { id = estate_privileges_and_agendas_events.3 }               
+	        country_event = { id = estate_privileges_and_agendas_events.3 }
+			if = {
+				limit = {
+					ai = yes
+				}
+				random_list = {
+					1 = {}
+					9 = { set_country_flag = auto_complete_estate_agenda_all }
+				}
+			}
         }
         custom_tooltip = SEPERATOR_TOOLTIP
         
@@ -251,7 +260,11 @@ interaction = {
 				has_government_attribute = seizing_land_takes_karma
 			}
 			add_karma = -10
-		}		
+		}
+		if = {
+			limit = { has_government_attribute = theocratic_monarchy_mechanic }
+			change_statists_vs_orangists = 0.05
+		}
 	}
 	ai_will_do = {
 		factor = 50
@@ -604,7 +617,7 @@ interaction = {
 			}
         add_estate_loyalty = {
             estate = all
-            loyalty = 10
+            loyalty = 5
             short = yes
         }
     }
@@ -629,7 +642,7 @@ interaction = {
     }
     effect = {
 		add_legitimacy = -10
-		add_republican_tradition = -10
+		add_republican_tradition = -5
 		add_horde_unity = -10
 		add_devotion = -10
 		add_meritocracy = -10
@@ -692,7 +705,7 @@ interaction = {
 			}
         add_estate_loyalty = {
             estate = all
-            loyalty = 10
+            loyalty = 5
             short = yes
         }
     }
@@ -747,7 +760,7 @@ interaction = {
 		add_corruption = 2
         add_estate_loyalty = {
             estate = all
-            loyalty = 10
+            loyalty = 5
             short = yes
         }
     }
@@ -877,6 +890,7 @@ interaction = {
 ####### Cast Spell
 ###################################################################
 
+
 interaction = { # Cast Spell
     key = cast_spell
     random_seed = random
@@ -953,11 +967,12 @@ interaction = { # Cast Spell
 				custom_tooltip = opens_magic_estate_menu_tt
 				custom_tooltip = cast_spell_effect_tt
 				hidden_effect = {
-					set_estate_privilege = estate_mages_cast_spells
-					if = { limit = { tag = I02 }
+					if = { limit = { tag = I02 } #krakdhumvror ice smiths
+						set_estate_privilege = estate_mages_perform_icecraft
 						country_event = { id = flavor_krak.100 }
 					}
 					else = {
+						set_estate_privilege = estate_mages_cast_spells
 						country_event = { id = magic_estate.1 }
 					}
 				}
@@ -1053,11 +1068,21 @@ interaction = { # Research Artificery
 					NOT = { has_estate_privilege = estate_artificers_organization_state }
 					NOT = { has_estate_privilege = estate_artificers_organization_feiten_shuimu_cadre }
 					NOT = { has_estate_privilege = estate_dragon_command_ninyu_kikun_sunyanin_artificers }
+					NOT = { has_estate_privilege = estate_artificers_organization_vazhatun_enhanced_astronomy }
+					NOT = { has_estate_privilege = estate_artificers_organization_discombobulatorium }
 				}
 				custom_tooltip = set_research_privilege_tt
 				hidden_effect = {
 					set_estate_privilege = artifice_invention_research_privilege
 					country_event = { id = artifice_events.1 } # Regular research
+				}
+			}
+			else_if = {
+				limit = { has_estate_privilege = estate_artificers_organization_discombobulatorium }
+				custom_tooltip = set_research_privilege_tt
+				hidden_effect = {
+					set_estate_privilege = artifice_invention_research_privilege
+					country_event = { id = artifice_events.12 } # Random research (allclan)
 				}
 			}
 			else = {
@@ -1070,10 +1095,28 @@ interaction = { # Research Artificery
 		}
     }
 	ai_will_do = {
-		factor = 0
+		# Will always research if able to. Could add RNG cooldown system that takes stuff like estate loyalty, gov type, etc. or something in future if really want to mess around with
+		factor = 50
+		# From before menu change
+		modifier = {
+			factor = 0
+			NOT = { artifice_has_points_for_basic = yes }
+		}
+		# From before menu change
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1445 }
+		}
+		# Won't research if slots filled
+		modifier = {
+			factor = 0
+			num_of_estate_privileges = {
+				estate = estate_artificers
+				value = 5
+			}
+		}
 	}
 }
-
 
 
 #########################

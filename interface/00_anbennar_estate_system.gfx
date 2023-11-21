@@ -36,6 +36,9 @@ spriteTypes = {
 		name = "GFX_estate_interaction_idea_variation_10"
 		texturefile = "gfx/interface/estates/idea_variation_estate_button_10.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_sale_of_titles_AI"
+		texturefile = "gfx/interface/estates/sales_of_titles_AI.dds"
+	}	
 
 }
