@@ -246,14 +246,14 @@ country_event = {
 	option = {
 		name = "iv_estate_events.sale.o31"
 		trigger = {
-			has_estate = estate_castonath_patricians
+			has_estate = estate_ahati
 		}
 		country_event = { id = iv_estate_events.68 }
 	}
 	option = {
 		name = "iv_estate_events.sale.o32"
 		trigger = {
-			has_estate = estate_castonath_patricians
+			has_estate = estate_adeen
 		}
 		country_event = { id = iv_estate_events.69 }
 	}
