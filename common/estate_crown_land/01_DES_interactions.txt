@@ -267,7 +267,7 @@ interaction = {
 		}
 	}
 	ai_will_do = {
-		factor = 50
+		factor = 0
 		modifier = {
 			factor = 0
 			# This check is needed to prevent collision with day-1 event theocracy.1
