@@ -179,7 +179,7 @@ guiTypes = {
 			name = "privileges_list"
 			backGround = ""
 			position = { x = 248 y = 42 }
-			size = { x = 700 y = 150 }
+			size = { x = 600 y = 150 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 1
 			spacing = 0
